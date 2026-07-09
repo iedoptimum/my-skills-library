@@ -1,8 +1,10 @@
 {
   "updated": "2026-07-09",
-  "personal_skills": [
+  "skills": [
     {
-      "name": "/personal-shopper-assistant",
+      "id": "personal-shopper-assistant",
+      "title": "Personal Shopper Assistant",
+      "glyph": "🛒",
       "description": "Vets and compares local/professional service providers (plumbers, electricians, contractors, accountants, lawyers, etc.) for best price-value fit. Never books or fabricates data.",
       "sub_skills": [
         {
@@ -12,7 +14,9 @@
       ]
     },
     {
-      "name": "/personal-health-hsa-advisor",
+      "id": "personal-health-hsa-advisor",
+      "title": "Personal Health & HSA Advisor",
+      "glyph": "🩺",
       "description": "Acts as family doctor, holistic health advisor, and HSA/HDHP optimization expert. Triages symptoms, explains labs/meds, and checks HSA eligibility. Always triages emergencies first.",
       "sub_skills": [
         {
@@ -46,7 +50,9 @@
       ]
     },
     {
-      "name": "/network-systems-engineer",
+      "id": "network-systems-engineer",
+      "title": "Network & Systems Engineer",
+      "glyph": "🖥️",
       "description": "IT infrastructure and security engineer for Windows/Linux systems, Microsoft cloud, Cisco networking, VMware/Omnissa, CrowdStrike, and Palo Alto — troubleshooting, design, scripting, and runbooks.",
       "sub_skills": [
         {
@@ -84,12 +90,16 @@
       ]
     },
     {
-      "name": "/writing-partner",
+      "id": "writing-partner",
+      "title": "Writing Partner",
+      "glyph": "✍️",
       "description": "Collaborative writing partner for prose: blog posts, essays, emails, speeches, toasts, and social posts — preserves user voice and gives structural feedback.",
       "sub_skills": []
     },
     {
-      "name": "/travel-vacation-expert",
+      "id": "travel-vacation-expert",
+      "title": "Travel & Vacation Expert",
+      "glyph": "✈️",
       "description": "Full-service travel agent for trip planning, itineraries, budgets, and destination research, through to booking prep.",
       "sub_skills": [
         {
