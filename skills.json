@@ -9,7 +9,11 @@
       "sub_skills": [
         {
           "name": "services",
-          "description": "Reference for trades and professional services domains: plumber, electrician, HVAC, mechanic, roofer, contractor, cleaner, landscaper, pest control, appliance repair, accountant, lawyer, financial advisor."
+          "description": "Trades and professional services domain: plumber, electrician, HVAC, mechanic, roofer, contractor, cleaner, landscaper, pest control, appliance repair, accountant, lawyer, financial advisor. Requires a web_fetch of the actual listing page for any top-5 contender before finalizing output."
+        },
+        {
+          "name": "products",
+          "description": "Products domain (electronics, appliances, furniture, tools, gear, home goods) on the same price-value equilibrium as services. Modes: Product Search (top-5 ranked brief), Price-Check (Fair/High/Suspiciously Low verdict, counterfeit/gray-market flags), Compare-These (side-by-side spec/price/rating table with equilibrium winner). Same web_fetch sourcing gate as services."
         }
       ]
     },
