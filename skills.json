@@ -1,0 +1,122 @@
+{
+  "updated": "2026-07-09",
+  "personal_skills": [
+    {
+      "name": "/personal-shopper-assistant",
+      "description": "Vets and compares local/professional service providers (plumbers, electricians, contractors, accountants, lawyers, etc.) for best price-value fit. Never books or fabricates data.",
+      "sub_skills": [
+        {
+          "name": "services",
+          "description": "Reference for trades and professional services domains: plumber, electrician, HVAC, mechanic, roofer, contractor, cleaner, landscaper, pest control, appliance repair, accountant, lawyer, financial advisor."
+        }
+      ]
+    },
+    {
+      "name": "/personal-health-hsa-advisor",
+      "description": "Acts as family doctor, holistic health advisor, and HSA/HDHP optimization expert. Triages symptoms, explains labs/meds, and checks HSA eligibility. Always triages emergencies first.",
+      "sub_skills": [
+        {
+          "name": "red-flags",
+          "description": "Emergency symptom checklist to screen before any routine health guidance — cardiac, vascular, and other urgent-care triggers."
+        },
+        {
+          "name": "western-medicine",
+          "description": "Conventional, evidence-based physician-style guidance workflow, run after red-flags are cleared."
+        },
+        {
+          "name": "holistic",
+          "description": "Whole-person guidance covering nutrition, sleep, stress, and complementary approaches, run after red-flags are cleared."
+        },
+        {
+          "name": "interactions",
+          "description": "Herb/supplement interaction and contraindication checks (e.g., blood thinners) before recommending any supplement."
+        },
+        {
+          "name": "hsa-eligible-expenses",
+          "description": "Triage of what does and doesn't qualify as an HSA-eligible expense, per IRS Publication 502."
+        },
+        {
+          "name": "hsa-limits",
+          "description": "Current HSA/HDHP contribution limits by year, sourced from IRS revenue procedures."
+        },
+        {
+          "name": "hsa-strategy",
+          "description": "Workflow for HSA contribution and investment strategy, factoring coverage type and catch-up eligibility."
+        }
+      ]
+    },
+    {
+      "name": "/network-systems-engineer",
+      "description": "IT infrastructure and security engineer for Windows/Linux systems, Microsoft cloud, Cisco networking, VMware/Omnissa, CrowdStrike, and Palo Alto — troubleshooting, design, scripting, and runbooks.",
+      "sub_skills": [
+        {
+          "name": "windows-server-ad",
+          "description": "Windows Server, Active Directory, Group Policy, DNS/DHCP, AD CS, and on-prem Exchange guidance — high blast-radius changes."
+        },
+        {
+          "name": "linux-server",
+          "description": "Linux server/desktop troubleshooting across RHEL- and Debian-family distros: bash, systemd, networking, packages, permissions."
+        },
+        {
+          "name": "microsoft-cloud",
+          "description": "M365, Exchange Online, Azure, Entra ID, Intune, Conditional Access, and Defender guidance."
+        },
+        {
+          "name": "cisco-networking",
+          "description": "Cisco switches/routers (IOS/IOS-XE), VLANs, trunking, routing, and wireless (Catalyst/AireOS, Meraki)."
+        },
+        {
+          "name": "vmware-omnissa",
+          "description": "ESXi, vCenter, vSphere, and Omnissa (VMware) Horizon VDI — treats hosts and golden images as production-critical."
+        },
+        {
+          "name": "crowdstrike",
+          "description": "Falcon sensor deployment, detections/incidents, prevention policies, Real Time Response, and threat hunting."
+        },
+        {
+          "name": "palo-alto",
+          "description": "PAN-OS configuration, security/NAT policy, GlobalProtect VPN, Panorama, and upgrades."
+        },
+        {
+          "name": "scripting",
+          "description": "PowerShell (Windows/AD/M365/Azure automation) and Python (cross-platform, APIs, network device automation) scripting."
+        }
+      ]
+    },
+    {
+      "name": "/writing-partner",
+      "description": "Collaborative writing partner for prose: blog posts, essays, emails, speeches, toasts, and social posts — preserves user voice and gives structural feedback.",
+      "sub_skills": []
+    },
+    {
+      "name": "/travel-vacation-expert",
+      "description": "Full-service travel agent for trip planning, itineraries, budgets, and destination research, through to booking prep.",
+      "sub_skills": [
+        {
+          "name": "destination-research",
+          "description": "Establishes current, accurate facts about a destination before planning ('where should we go', 'is X a good idea')."
+        },
+        {
+          "name": "budget-planning",
+          "description": "Trip cost estimates and budget breakdowns across standard cost categories."
+        },
+        {
+          "name": "itinerary-planning",
+          "description": "Day-by-day plans, multi-city routing, and pacing rules for trips."
+        },
+        {
+          "name": "local-experiences",
+          "description": "Matches food, neighborhoods, and 'hidden gem' experiences to the traveler rather than generic top-attraction lists."
+        },
+        {
+          "name": "booking-logistics",
+          "description": "Flight/hotel/transport comparison up to the point of booking — never places the booking itself."
+        },
+        {
+          "name": "output-formats",
+          "description": "Dispatcher matching output effort to the ask, avoiding over- or under-building deliverables."
+        }
+      ]
+    }
+  ]
+}
