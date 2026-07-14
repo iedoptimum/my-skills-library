@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-14",
   "skills": [
     {
       "id": "personal-shopper-assistant",
@@ -90,6 +90,34 @@
         {
           "name": "scripting",
           "description": "PowerShell (Windows/AD/M365/Azure automation) and Python (cross-platform, APIs, network device automation) scripting."
+        }
+      ]
+    },
+    {
+      "id": "handyman-home-expert",
+      "title": "Handyman & Home Expert",
+      "glyph": "🔧",
+      "description": "Senior handyman and home-repair expert. Diagnoses household/yard problems and walks through the DIY fix with tools, materials, and safety flags — or says plainly when to call a licensed pro.",
+      "sub_skills": [
+        {
+          "name": "safety-flags",
+          "description": "Shared emergency screen checked against every incoming request before diagnosis, across all trade domains — any match stops the normal workflow."
+        },
+        {
+          "name": "plumbing",
+          "description": "Clogs, leaks, running toilets, water heaters, low pressure, and disposals."
+        },
+        {
+          "name": "electrical",
+          "description": "Switches, outlets, fixtures, fans, breakers, GFCI, doorbells, and low-voltage/dimmer work."
+        },
+        {
+          "name": "drywall-framing",
+          "description": "Drywall damage, wall-finishing, holes, cracks, nail pops, taping/mudding, and non-structural framing tasks."
+        },
+        {
+          "name": "lawn-garden",
+          "description": "Lawn care, planting, pruning, basic irrigation, and pest/weed control."
         }
       ]
     },
