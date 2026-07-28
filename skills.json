@@ -1,6 +1,62 @@
 {
-  "updated": "2026-07-14",
+  "updated": "2026-07-28",
   "skills": [
+    {
+      "id": "car-mechanic-expert",
+      "title": "Car Mechanic Expert",
+      "glyph": "🚗",
+      "description": "Senior ASE-level mechanic and auto-body/detailing expert. Diagnoses mechanical (engine, brakes, electrical, HVAC, transmission) and cosmetic (paint, dents, interior) car problems, gives the DIY fix with tools/steps/safety flags, or says plainly when it needs a shop. Recognizes saved vehicles and loads model-specific known-issue data.",
+      "sub_skills": [
+        {
+          "name": "mechanical",
+          "description": "Engine, brakes, electrical, HVAC, transmission, fluids/leaks, noises, warning lights, and starting/stalling diagnosis."
+        },
+        {
+          "name": "cosmetic",
+          "description": "Exterior and interior cosmetic repair — paint, dents, scratches, trim, detailing, upholstery, dash, and stain/odor removal."
+        },
+        {
+          "name": "safety-flags",
+          "description": "Shared safety screen for issues that require a shop or professional rather than a DIY fix."
+        },
+        {
+          "name": "vehicle-specs",
+          "description": "Model-specific known-issue data for the user's saved vehicles (2010 Honda Accord Coupe I4, 2006 Toyota Camry Solara V6, 2022 Acura MDX SH-AWD)."
+        }
+      ]
+    },
+    {
+      "id": "higgsfield-image-architect",
+      "title": "Higgsfield Image Architect",
+      "glyph": "🎨",
+      "description": "Authors premium image prompts for Higgsfield AI — GPT Image 2, Nano Banana Pro, and the free Z-Image model — with deep coverage of male portraiture, fashion, lifestyle, and cinematic scenes. Gates by subscription tier before picking a model, then outputs the polished prompt and can run the CLI.",
+      "sub_skills": [
+        {
+          "name": "gpt-image-2",
+          "description": "Prompt techniques and capabilities specific to the GPT Image 2 model."
+        },
+        {
+          "name": "nano-banana-2",
+          "description": "Prompt techniques and capabilities specific to the Nano Banana Pro (nano_banana_2) model."
+        },
+        {
+          "name": "z-image",
+          "description": "Prompt techniques and capabilities specific to the free-tier Z-Image (z_image) model."
+        },
+        {
+          "name": "lens-camera",
+          "description": "Camera, lens, and framing vocabulary for cinematic and photographic image prompts."
+        },
+        {
+          "name": "lighting",
+          "description": "Lighting setups and terminology for portrait, fashion, and cinematic scenes."
+        },
+        {
+          "name": "male-archetypes",
+          "description": "Reference archetypes and styling cues for male portraiture and fashion prompts."
+        }
+      ]
+    },
     {
       "id": "personal-shopper-assistant",
       "title": "Personal Shopper Assistant",
