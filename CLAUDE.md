@@ -32,7 +32,7 @@ There is no build, lint, or test tooling — this is plain HTML/CSS/JS with no d
     ]
   }
   ```
-  `index.html` and `skills.json` must stay in sync on this schema — renaming a key in one requires updating the other (this exact mismatch previously caused an empty-list bug).
+  `index.html` and `skills.json` must stay in sync on this schema — renaming a key in one requires updating the other (this exact mismatch previously caused an empty-list bug). `sub_skills` may be `[]` for a self-contained skill (e.g. `writing-partner`) — `render()` swaps in a "no sub-skills" placeholder for those cards instead of an empty grid.
 - **`personal_skills.json`** — the original raw data dump the user supplied from their claude.ai account, using a slightly different shape (`name: "/skill-slug"` instead of `id`/`title`). It is intentionally left untracked (not `git add`ed, though there's no `.gitignore` enforcing it) and is not fetched by the site. Treat `skills.json` as derived from it, not the other way around — when the user adds a skill, check whether it already exists here first.
 
 ## Updating the skill list
