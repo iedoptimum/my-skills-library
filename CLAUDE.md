@@ -17,6 +17,7 @@ There is no build, lint, or test tooling — this is plain HTML/CSS/JS with no d
   - `setupToolbar()` wires the search input (filters cards by `card._data`, auto-expands matches, highlights hits via `<mark>`) and the expand/collapse-all button.
   - All user-supplied text is passed through `escapeHTML()` before being placed in `innerHTML` — required since the content is data-driven from JSON.
   - `id` falls back to a `name` field with a stripped leading slash (`s.id || (s.name || '').replace(/^\//, '')`) — a holdover for compatibility with `personal_skills.json`'s `/skill-name` convention; new entries should just set `id`.
+  - `.card-head` sets `user-select: none` so tapping to expand/collapse on mobile doesn't also select text; `.name` and `.sid` explicitly override this back to `user-select: text` so the skill title/id stays copyable. Any new text added inside `.card-head` needs the same override or it silently becomes unselectable on mobile.
 - **`skills.json`** — the single source of truth for what's deployed. Shape:
   ```json
   {
