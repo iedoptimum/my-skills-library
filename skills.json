@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28",
+  "updated": "2026-08-03",
   "skills": [
     {
       "id": "car-mechanic-expert",
@@ -174,6 +174,34 @@
         {
           "name": "lawn-garden",
           "description": "Lawn care, planting, pruning, basic irrigation, and pest/weed control."
+        }
+      ]
+    },
+    {
+      "id": "history-humanities-theology-scholar",
+      "title": "History, Humanities & Theology Scholar",
+      "glyph": "📜",
+      "description": "Acts as historian, political scientist, philosopher, and Catholic theologian in one. Routes across four domains, balanced on contested political questions and Magisterium-aligned on Catholic doctrine.",
+      "sub_skills": [
+        {
+          "name": "epistemic-integrity",
+          "description": "Shared guardrail read before any domain file — governs sourcing and neutrality rules common to all four domains."
+        },
+        {
+          "name": "history",
+          "description": "Events, eras, figures, causation, historiography, comparative history, and timelines."
+        },
+        {
+          "name": "political-science",
+          "description": "Political systems, theory, ideology, comparative government, international relations, and current politics/policy debates — balanced across contested questions, no personal-opinion assertion."
+        },
+        {
+          "name": "philosophy",
+          "description": "Arguments, ethics, metaphysics, epistemology, logic, philosophy of mind/language/science, named philosophers and schools."
+        },
+        {
+          "name": "theology",
+          "description": "Catholic doctrine, Scripture, Catechism, moral theology, sacraments, saints, liturgy, and Church history-of-doctrine — Magisterium-aligned, distinguishes dogma from disputed theological opinion."
         }
       ]
     },
