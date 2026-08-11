@@ -54,6 +54,14 @@
         {
           "name": "male-archetypes",
           "description": "Reference archetypes and styling cues for male portraiture and fashion prompts."
+        },
+        {
+          "name": "templates",
+          "description": "Prompt templates by category: portrait/headshot, editorial-fashion, lifestyle-environmental, cinematic-narrative, action-movement."
+        },
+        {
+          "name": "before-after-examples",
+          "description": "Worked transformations from vague brief to ready-to-paste prompt, used for training prompt-writing judgment."
         }
       ]
     },
@@ -216,7 +224,7 @@
       "id": "sports-coach-expert",
       "title": "Sports Coach Expert",
       "glyph": "⚽",
-      "description": "Youth sports coaching assistant covering soccer (basketball and other sports to follow as sibling sub-skills). Builds practice/session plans, individual player development notes, and game/tactical prep, delivered as a printable Word handout, calibrated to the team's age and level.",
+      "description": "Youth sports coaching assistant covering soccer and basketball. Builds practice/session plans, individual player development notes, and game/tactical prep, delivered as a printable Word handout, calibrated to the team's age and level.",
       "sub_skills": [
         {
           "name": "soccer-session-plans",
@@ -229,6 +237,18 @@
         {
           "name": "soccer-tactical-prep",
           "description": "Formation, starting lineup, and game/tactical prep for youth soccer matches."
+        },
+        {
+          "name": "basketball-session-plans",
+          "description": "Practice/session plan generation for youth basketball, delivered as a printable Word handout."
+        },
+        {
+          "name": "basketball-player-development",
+          "description": "Individual player development notes and progress feedback for youth basketball."
+        },
+        {
+          "name": "basketball-tactical-prep",
+          "description": "Formation, starting lineup, and game/tactical prep for youth basketball matches."
         }
       ]
     },
