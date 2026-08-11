@@ -34,14 +34,20 @@ There is no build, lint, or test tooling — this is plain HTML/CSS/JS with no d
   }
   ```
   `index.html` and `skills.json` must stay in sync on this schema — renaming a key in one requires updating the other (this exact mismatch previously caused an empty-list bug). `sub_skills` may be `[]` for a self-contained skill (e.g. `writing-partner`) — `render()` swaps in a "no sub-skills" placeholder for those cards instead of an empty grid.
-- **`personal_skills.json`** — the original raw data dump the user supplied from their claude.ai account, using a slightly different shape (`name: "/skill-slug"` instead of `id`/`title`). It is intentionally left untracked (not `git add`ed, though there's no `.gitignore` enforcing it) and is not fetched by the site. Treat `skills.json` as derived from it, not the other way around — when the user adds a skill, check whether it already exists here first.
+- **`personal_skills.json`** — a transient staging file, not a second source of truth. The user drops a fresh raw data dump from their claude.ai account here, shaped as `{ "personal_skills": [{ "name": "/skill-slug", "description": "...", "sub_skills": [...] }] }` (top-level key `personal_skills`, not `skills`; `name` instead of `id`/`title`, still slash-prefixed). It is intentionally left untracked (not `git add`ed, though there's no `.gitignore` enforcing it) and is not fetched by the site. `skills.json` is always the file to read from for what's actually deployed — `personal_skills.json` only exists to be diffed against it and merged in, then deleted.
 
 ## Updating the skill list
 
-No build step. To add or change a skill:
-1. Edit `skills.json` directly (add/update an entry, bump `updated`).
-2. `git add skills.json && git commit -m "..." && git push`
-3. GitHub Pages redeploys automatically within about a minute.
+`skills.json` is the single source of truth for what's deployed — always read/edit it directly, not `personal_skills.json`.
+
+When the user says "update my skills" (or similar) and `personal_skills.json` is present, that means they've dropped a fresh export to merge in:
+1. Diff `personal_skills.json` against `skills.json` (by id/name, and by each skill's `sub_skills` — they can drift at the sub-skill level, e.g. a sub-skill added upstream but not yet ported).
+2. Port every difference into `skills.json` (add/update entries, bump `updated`), preserving `skills.json`'s existing style (concise `title`/`description`, hyphenated sub-skill slugs like `soccer-session-plans`, not `personal_skills.json`'s slashed/verbose ones).
+3. Delete `personal_skills.json` — once its contents are folded into `skills.json`, it has served its purpose and should not stick around.
+4. `git add skills.json && git commit -m "..." && git push` (only `skills.json`; `personal_skills.json` is untracked and now deleted).
+5. GitHub Pages redeploys automatically within about a minute.
+
+For any other skill edit (no `personal_skills.json` involved), just edit `skills.json` directly and follow steps 4–5.
 
 ## Deployment
 
